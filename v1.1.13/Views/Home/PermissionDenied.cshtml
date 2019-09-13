@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = @GlobalAppSettings.SystemSettings.OrganizationName + " - [[[Permission Denied]]]";
+}
+
+@section scripts{
+    @Scripts.Render("~/scripts/bootstrapjs")
+}
+
+@section MainSection{
+    <div>
+        <div class="col-md-12">
+            <div class="col-xs-12 text-center" style="color: #ff0000; margin-top: 60px ; font-size: 30px">[[[You do not have permission to view this page.]]]</div>
+        </div>
+    </div>
+}
